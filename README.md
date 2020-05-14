@@ -12,17 +12,11 @@ This skill is used to manage a yeelight color bulb 2 using mycroft and yeelight 
 * "What is the mode of my bulb"
 * "Is my bulb off"
 * "When was the bulb turned on"
-* "Set my bulb intensity to"
-* "Set my bulb to flow"
-* "Set my bulb to flow"
+* "Set my bulb intensity to <x> percent"
 * "Set my bulb to flow"
 * "Turn off my bulb"
 * "Turn on my bulb"
-* "Turn my bulb into"
-* "Turn my bulb into"
-* "Turn my bulb into"
-* "Turn my bulb into"
-* "Turn my bulb into"
+* "Turn my bulb into <color>"
 
 ## Credits
 Vincent A. Arcila
