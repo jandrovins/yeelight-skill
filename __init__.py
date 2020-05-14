@@ -21,8 +21,8 @@ class Yeelight(MycroftSkill):
     def initialize(self):
         self.bulb = Bulb("192.168.1.60")
         self.log.info("Yeelight Bulb initilized")
-        self.get_properties()
-        self.state = bulb.last_properties
+        self.bulb.get_properties()
+        self.state = self.bulb.last_properties
         self.log.debug(f'Bulb properties: {self.state}')
 
 
