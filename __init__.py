@@ -7,10 +7,16 @@ class Yeelight(MycroftSkill):
         MycroftSkill.__init__(self)
 
     @intent_file_handler('bulb.on.intent')
-    def handle_yeelight(self, message):
+    def handle_bulb_on(self, message):
         self.log.info("Turning bulb on")
         self.speak_dialog('in.progress')
         self.bulb.turn_on()
+
+    @intent_file_handler('bulb.off.intent')
+    def handle_bulb_on(self, message):
+        self.log.info("Turning bulb off")
+        self.speak_dialog('in.progress')
+        self.bulb.turn_off()
 
     def initialize(self):
         self.bulb("192.168.1.60")
