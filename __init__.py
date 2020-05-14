@@ -1,13 +1,24 @@
-from mycroft import MycroftSkill, intent_file_handler
+from mycroft import MycroftSkill, intent_handler
+from yeelight import *
 
 
 class Yeelight(MycroftSkill):
     def __init__(self):
         MycroftSkill.__init__(self)
 
-    @intent_file_handler('yeelight.intent')
+    @intent_file_handler('bulb.on.intent')
     def handle_yeelight(self, message):
-        self.speak_dialog('yeelight')
+        self.log.info("Turning bulb on")
+        self.speak_dialog('in.progress')
+        self.bulb.turn_on()
+
+    def initialize(self):
+        self.bulb("192.168.1.60")
+        self.log.info("Yeelight Bulb initilized")
+        self.get_properties()
+        self.state = bulb.last_properties
+        self.log.debug(f'Bulb properties: {self.state}')
+
 
 
 def create_skill():
