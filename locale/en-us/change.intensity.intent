@@ -1,1 +1,9 @@
-( Set | Turn ) ( my | ) ( bulb | light ) intensity to {percent}
+Set bulb intensity to {percent}
+Set my bulb intensity to {percent}
+Set light intensity to {percent}
+Set my light intensity to {percent}
+Turn my bulb intensity to {percent}
+Turn bulb intensity to {percent}
+Turn light intensity to {percent}
+Turn my light intensity to {percent}
+Intensity to {percent}

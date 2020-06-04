@@ -1,1 +1,12 @@
-( Set | Turn ) ( my | ) ( bulb| light ) {color}
+Set my light {color}
+Turn my light {color}
+Set light {color}
+Turn light {color}
+Set my bulb {color}
+Turn my bulb {color}
+Set bulb {color}
+Turn bulb {color}
+Set my lights {color}
+Turn my lights {color}
+Set lights {color}
+Turn lights {color}
